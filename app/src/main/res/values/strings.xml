@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="todo">TODO</string>
+    <string name="value">value</string>
+    <string name="copyright_all_rights_reserved">!@CopyRight All @Rights Reserved!</string>
+</resources>
