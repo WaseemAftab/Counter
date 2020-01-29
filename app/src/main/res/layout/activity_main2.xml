@@ -6,32 +6,35 @@
     android:background="#009688"
     tools:context=".MainActivity2">
 
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/car" />
     <TextView
         android:id="@+id/txtview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/img"
         android:text="@string/value"
-        android:textStyle="italic"
-        android:background="#006064"
-        android:layout_marginTop="8dp"
         android:textColor="#FFFFFF"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:textStyle="italic" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/txtview1"
-        android:src="@drawable/car"
-        android:contentDescription="@string/todo" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/copyright_all_rights_reserved"
-        android:textSize="20sp"
-        android:background="#006064"
-        android:textColor="#DDDDDD"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="#006064"
+        android:text="@string/copyright_all_rights_reserved"
+        android:textColor="#DDDDDD"
+        android:textSize="20sp" />
 </RelativeLayout>

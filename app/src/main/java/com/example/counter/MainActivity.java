@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et;
     Button btn1;
     Button btn2;
-    Button btn3;
+    Button btn3,btn4;
     int counter = 0;
     String st;
 
@@ -29,20 +29,21 @@ public class MainActivity extends AppCompatActivity {
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
         btn3 = (Button) findViewById(R.id.btn3);
+        btn4 = (Button) findViewById(R.id.btn4);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 counter++;
-                tv.setText("Your Counter Is : " + counter);
+                tv.setText("Your Counter is : " + counter);
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 counter = 0;
-                tv.setText("Your Counter is!" + counter);
+                tv.setText("Your Counter is : " + counter);
 
             }
         });
