@@ -8,11 +8,43 @@
     android:padding="20sp"
     tools:context=".MainActivity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="60dp"
+            android:hint="Enter Your Name"
+            android:textAlignment="center"
+
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="SEND"
+        android:textColor="@android:color/holo_orange_dark" />
+
     <TextView
         android:id="@+id/txtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
         android:text="Start Counting!"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="30sp"
@@ -22,56 +54,47 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="+"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="25dp"
-        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_toRightOf="@+id/btn1"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="200dp"
-        android:text="-"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/edittxt"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="type something"
-        android:textColorHint="@android:color/holo_orange_light"
-        android:textSize="30sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal">
 
-    <Button
-    android:id="@+id/btn3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/edittxt"
-    android:text="SEND"
-    android:textColor="@android:color/holo_orange_dark"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Reset"
-        android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@+id/btn2"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="18dp" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

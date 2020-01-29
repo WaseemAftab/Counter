@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009688"
-    tools:context=".MainActivity2">
+    tools:context=".SecondActivity">
 
 
 
@@ -25,7 +25,7 @@
         android:layout_below="@+id/img"
         android:text="@string/value"
         android:textColor="#FFFFFF"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="italic" />
 
     <TextView

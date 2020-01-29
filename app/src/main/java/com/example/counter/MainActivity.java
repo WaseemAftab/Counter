@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et;
     Button btn1;
     Button btn2;
-    Button btn3,btn4;
+    Button btn3, btn4;
     int counter = 0;
     String st;
 
@@ -39,22 +39,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                counter = 0;
-                tv.setText("Your Counter is : " + counter);
 
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (counter >= 1) {
+                    counter--;
+                    tv.setText("Your Counter is : " + counter);
+                }
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 st = et.getText().toString();
                 intent.putExtra("value", st);
                 startActivity(intent);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                counter = 0;
+                tv.setText("Start Counting : " + counter);
+
             }
         });
     }

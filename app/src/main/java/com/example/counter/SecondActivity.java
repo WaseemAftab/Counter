@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
 
     TextView tv;
@@ -13,7 +13,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_second);
 
         tv = (TextView)findViewById(R.id.txtview1);
 
