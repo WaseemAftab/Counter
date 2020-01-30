@@ -3,5 +3,5 @@ Basic Counter app for beginner android developers to understand the process of r
 
 
 
-![App preview](https://github.com/Wassi01/Counter/blob/master/app/src/main/res/drawable/img.png?raw=true "Title")
+![alt text](https://github.com/Wassi01/Counter/blob/master/app/src/main/res/drawable/img.png = 200*400)
 
